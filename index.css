@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: rgb(6, 40, 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+::-webkit-scrollbar{
+    width: 1px;
+    height: 1px;
+    border-radius: 26px;
+    background-color:rgb(6, 40, 6);
+}
+
+.box h2{
+    color: white;
+    font-weight: 900;
+    font-size: 2.8rem;
+    text-align: center;
+}
+.box h4{
+    color: white;
+    font-weight: 900;
+    font-size: 1.6rem;
+    text-align: center;
+    gap: 10px;
+}
+.container button{
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    border: 2px solid rgb(56, 205, 255);
+    border-radius: 26px;
+    cursor: pointer;
+}
+.container button:hover{
+    background-color:rgb(228, 120, 100);
+    color: black;
+}
+.container button:focus{
+    border: 2px solid blueviolet;
+}
+
+.container button a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.container button a:hover{
+    background-color:rgb(228, 120, 100);
+    color: black;
+}
+.container button a:focus{
+    border: 2px solid blueviolet;
+}
+#wikki{
+    animation: op 12s linear infinite;
+}
+
+@keyframes op {
+    10%{
+        opacity: 0.3;
+    }
+
+    40%{
+        opacity: 0.9;
+    }
+
+    60%{
+        opacity: 0.12;
+    }
+
+    80%{
+        scale:1.06;
+    }
+    100%{
+        opacity: 0.3;
+    }
+}
+
+@media screen and (max-width: 640px) {
+   body{
+    height: 168vh;
+   }
+    }
+@media screen and (max-width: 570px) {
+    .box h2{
+        color: white;
+        font-weight: 800;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .box h4{
+        color: white;
+        font-weight: 800;
+        font-size: 1.2rem;
+        text-align: center;
+        gap: 10px;
+    }
+    }
+
+    
+@media screen and (max-width: 420px) {
+    .box h2{
+        color: white;
+        font-weight: 800;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .box h4{
+        color: white;
+        font-weight: 800;
+        font-size: 1rem;
+        text-align: center;
+        gap: 10px;
+    }
+    }
+
+       
+@media screen and (max-width: 320px) {
+    .box h2{
+        color: white;
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .box h4{
+        color: white;
+        font-weight: 700;
+        font-size: 22px;
+        text-align: center;
+        gap: 10px;
+    }
+    body{
+        height: 132vh;
+    }
+    }
+
+                 
+@media screen and (max-width: 250px) {
+    .box h2{
+        color: white;
+        font-weight: 700;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .box h4{
+        color: white;
+        font-weight: 700;
+        font-size: 22px;
+        text-align: center;
+        gap: 10px;
+    }
+    body{
+        height:260vh;
+    }
+    }
